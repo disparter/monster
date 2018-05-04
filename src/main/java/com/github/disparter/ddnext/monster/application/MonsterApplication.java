@@ -1,4 +1,4 @@
-package com.github.disparter.ddnext.monster;
+package com.github.disparter.ddnext.monster.application;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
