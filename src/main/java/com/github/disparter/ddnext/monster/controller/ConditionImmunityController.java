@@ -12,13 +12,13 @@ import com.github.disparter.ddnext.monster.entity.ConditionImmunityType;
 import com.github.disparter.ddnext.monster.service.ConditionImmunityService;
 
 @RestController
-@RequestMapping("/v1")
+@RequestMapping("/v1/conditions")
 public class ConditionImmunityController {
 
 	@Autowired
 	private ConditionImmunityService conditionImmunityService;
 	
-	@RequestMapping(value = "/conditions", method = RequestMethod.GET)
+	@RequestMapping(method = RequestMethod.GET)
 	public ResponseEntity<List<ConditionImmunityType>> types() {
 	    return ResponseEntity.ok(conditionImmunityService.getTypes());
 	}

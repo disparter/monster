@@ -9,7 +9,7 @@
 	<packaging>jar</packaging>
 
 	<name>monster</name>
-	<description>Demo project for Spring Boot</description>
+	<description>MONSTER API - Some ddnext lists, and later a cr custom monster calculator</description>
 
 	<parent>
 		<groupId>org.springframework.boot</groupId>
