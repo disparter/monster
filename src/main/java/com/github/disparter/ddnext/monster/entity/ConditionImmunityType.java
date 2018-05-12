@@ -1,6 +1,9 @@
 package com.github.disparter.ddnext.monster.entity;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.fasterxml.jackson.annotation.JsonFormat;
+import com.github.disparter.ddnext.monster.helper.Translator;
 
 @JsonFormat(shape = JsonFormat.Shape.OBJECT)
 public enum ConditionImmunityType {
@@ -29,17 +32,20 @@ public enum ConditionImmunityType {
 	private String name;
 	private String description;
 	
+	@Autowired
+	private Translator translator;
+	
 	ConditionImmunityType(String name, String description) {
 		this.name = name;
 		this.description = description;
 	}
 
 	public String getName() {
-		return name;
+		return translator.get(this.name);
 	}
 
 	public String getDescription() {
-		return description;
+		return translator.get(this.description);
 	}
 	
 }
