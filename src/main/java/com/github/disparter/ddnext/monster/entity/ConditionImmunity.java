@@ -31,7 +31,7 @@ public class ConditionImmunity implements Serializable {
 	
 	@Enumerated(EnumType.STRING)
 	@Column(name="str_type")
-	private ConditionImmunityType type;
+	private ConditionType type;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="int_monster_id")
@@ -45,11 +45,11 @@ public class ConditionImmunity implements Serializable {
 		this.id = id;
 	}
 
-	public ConditionImmunityType getType() {
+	public ConditionType getType() {
 		return type;
 	}
 
-	public void setType(ConditionImmunityType type) {
+	public void setType(ConditionType type) {
 		this.type = type;
 	}
 

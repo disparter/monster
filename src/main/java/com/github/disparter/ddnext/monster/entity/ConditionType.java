@@ -1,10 +1,10 @@
 package com.github.disparter.ddnext.monster.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.github.disparter.ddnext.monster.helper.MessageSourceHelper;
+import com.github.disparter.ddnext.monster.helper.Translator;
 
 @JsonFormat(shape = JsonFormat.Shape.OBJECT)
-public enum ConditionImmunityType {
+public enum ConditionType {
 	
 	//Common
 	BLINDED("blinded.condition.name", "blinded.condition.description"),
@@ -30,17 +30,17 @@ public enum ConditionImmunityType {
 	private String name;
 	private String description;
 	
-	ConditionImmunityType(String name, String description) {
+	ConditionType(String name, String description) {
 		this.name = name;
 		this.description = description;
 	}
 
 	public String getName() {
-		return MessageSourceHelper.get(this.name);
+		return Translator.get(this.name);
 	}
 
 	public String getDescription() {
-		return MessageSourceHelper.get(this.description);
+		return Translator.get(this.description);
 	}
 	
 }

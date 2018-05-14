@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.github.disparter.ddnext.monster.entity.ConditionImmunityType;
+import com.github.disparter.ddnext.monster.entity.ConditionType;
 import com.github.disparter.ddnext.monster.service.ConditionImmunityService;
 
 @RestController
@@ -19,7 +19,7 @@ public class ConditionImmunityController {
 	private ConditionImmunityService conditionImmunityService;
 	
 	@RequestMapping(method = RequestMethod.GET)
-	public ResponseEntity<List<ConditionImmunityType>> types() {
+	public ResponseEntity<List<ConditionType>> types() {
 	    return ResponseEntity.ok(conditionImmunityService.getTypes());
 	}
     

@@ -31,7 +31,7 @@ public class DamageResistance implements Serializable {
 	
 	@Enumerated(EnumType.STRING)
 	@Column(name="str_type")
-	private DamageResistanceType type;
+	private DamageType type;
 	
 	@ManyToOne(fetch=FetchType.LAZY)
 	@JoinColumn(name="int_monster_id")
@@ -45,11 +45,11 @@ public class DamageResistance implements Serializable {
 		this.id = id;
 	}
 
-	public DamageResistanceType getType() {
+	public DamageType getType() {
 		return type;
 	}
 
-	public void setType(DamageResistanceType type) {
+	public void setType(DamageType type) {
 		this.type = type;
 	}
 

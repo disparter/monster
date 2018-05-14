@@ -8,7 +8,7 @@ import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Component;
 
 @Component
-public class MessageSourceHelper {
+public class Translator {
 
     @Resource(name = "messageSource")
     private MessageSource injectedMessageSource;

@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.github.disparter.ddnext.monster.entity.DamageResistanceType;
+import com.github.disparter.ddnext.monster.entity.DamageType;
 import com.github.disparter.ddnext.monster.service.DamageResistanceService;
 
 @RestController
@@ -19,7 +19,7 @@ public class DamageResistanceController {
 	private DamageResistanceService damageResistanceService;
 	
 	@RequestMapping(method = RequestMethod.GET)
-	public ResponseEntity<List<DamageResistanceType>> types() {
+	public ResponseEntity<List<DamageType>> types() {
 	    return ResponseEntity.ok(damageResistanceService.getTypes());
 	}
     
