@@ -5,20 +5,20 @@ import com.github.disparter.ddnext.monster.helper.Translator;
 
 @JsonFormat(shape = JsonFormat.Shape.OBJECT)
 public enum MonsterType {
-	Aberration("race.aberration.name","race.aberration.description"),
-	Beast("race.beast.name","race.beast.description"),
-	Celestial("race.celestial.name","race.celestial.description"),
-	Construct("race.construct.name","race.construct.description"),
-	Dragon("race.dragon.name","race.dragon.description"),
-	Elemental("race.elemental.name","race.elemental.description"),
-	Fey("race.fey.name","race.fey.description"),
-	Fiend("race.fiend.name","race.fiend.description"),
-	Giant("race.giant.name","race.giant.description"),
-	Humanoid("race.humanoid.name","race.humanoid.description"),
-	Monstrosity("race.monstrosity.name","race.monstrosity.description"),
-	Ooze("race.ooze.name","race.ooze.description"),
-	Plant("race.plant.name","race.plant.description"),
-	Undead("race.undead.name","race.undead.description");
+	Aberration("monster.aberration.name","monster.aberration.description"),
+	Beast("monster.beast.name","monster.beast.description"),
+	Celestial("monster.celestial.name","monster.celestial.description"),
+	Construct("monster.construct.name","monster.construct.description"),
+	Dragon("monster.dragon.name","monster.dragon.description"),
+	Elemental("monster.elemental.name","monster.elemental.description"),
+	Fey("monster.fey.name","monster.fey.description"),
+	Fiend("monster.fiend.name","monster.fiend.description"),
+	Giant("monster.giant.name","monster.giant.description"),
+	Humanoid("monster.humanoid.name","monster.humanoid.description"),
+	Monstrosity("monster.monstrosity.name","monster.monstrosity.description"),
+	Ooze("monster.ooze.name","monster.ooze.description"),
+	Plant("monster.plant.name","monster.plant.description"),
+	Undead("monster.undead.name","monster.undead.description");
 	
 	private String name;
 	private String description;
