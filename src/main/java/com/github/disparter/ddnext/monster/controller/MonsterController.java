@@ -8,19 +8,19 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.github.disparter.ddnext.monster.entity.Race;
-import com.github.disparter.ddnext.monster.service.RaceService;
+import com.github.disparter.ddnext.monster.entity.MonsterType;
+import com.github.disparter.ddnext.monster.service.MonsterService;
 
 @RestController
-@RequestMapping("/v1/races")
-public class RaceController {
+@RequestMapping("/v1/monsters")
+public class MonsterController {
 
 	@Autowired
-	private RaceService raceService;
+	private MonsterService monsterService;
 	
-	@RequestMapping(method = RequestMethod.GET)
-	public ResponseEntity<List<Race>> types() {
-	    return ResponseEntity.ok(raceService.getRaces());
+	@RequestMapping(path = "/types", method = RequestMethod.GET)
+	public ResponseEntity<List<MonsterType>> types() {
+	    return ResponseEntity.ok(monsterService.getTypes());
 	}
     
 }
