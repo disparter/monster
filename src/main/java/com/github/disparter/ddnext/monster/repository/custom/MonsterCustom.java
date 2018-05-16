@@ -2,10 +2,10 @@ package com.github.disparter.ddnext.monster.repository.custom;
 
 import java.util.List;
 
-import com.github.disparter.ddnext.monster.entity.Race;
+import com.github.disparter.ddnext.monster.entity.MonsterType;
 
 public interface MonsterCustom { 
 	
-	public List<Race> getRaces();
+	public List<MonsterType> getTypes();
 
 }

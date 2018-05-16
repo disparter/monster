@@ -4,13 +4,14 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import com.github.disparter.ddnext.monster.helper.Translator;
 
 @JsonFormat(shape = JsonFormat.Shape.OBJECT)
-public enum Race {
+public enum MonsterType {
 	Aberration("race.aberration.name","race.aberration.description"),
 	Beast("race.beast.name","race.beast.description"),
 	Celestial("race.celestial.name","race.celestial.description"),
 	Construct("race.construct.name","race.construct.description"),
 	Dragon("race.dragon.name","race.dragon.description"),
 	Elemental("race.elemental.name","race.elemental.description"),
+	Fey("race.fey.name","race.fey.description"),
 	Fiend("race.fiend.name","race.fiend.description"),
 	Giant("race.giant.name","race.giant.description"),
 	Humanoid("race.humanoid.name","race.humanoid.description"),
@@ -22,7 +23,7 @@ public enum Race {
 	private String name;
 	private String description;
 	
-	Race(String name, String description){
+	MonsterType(String name, String description){
 		this.name = name;
 		this.description = description;
 	}

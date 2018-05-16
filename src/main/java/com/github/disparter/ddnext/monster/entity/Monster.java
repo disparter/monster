@@ -40,7 +40,7 @@ public class Monster implements Serializable {
 	
 	@Enumerated(EnumType.STRING)
 	@Column(name="str_race_id")
-	private Race race;
+	private MonsterType type;
 	
 	@Enumerated(EnumType.STRING)
 	@Column(name="str_tendency_ge_id")
@@ -134,12 +134,12 @@ public class Monster implements Serializable {
 		this.size = size;
 	}
 
-	public Race getRace() {
-		return race;
+	public MonsterType getType() {
+		return type;
 	}
 
-	public void setRace(Race race) {
-		this.race = race;
+	public void setType(MonsterType type) {
+		this.type = type;
 	}
 
 	public Tendency getTendencyGE() {
