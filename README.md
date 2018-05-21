@@ -10,3 +10,7 @@ this api will help to generate custom monsters based on already existing ones us
 
 see: http://dm-shield.s3-website-sa-east-1.amazonaws.com
 
+### also now the monster-api has a swagger-ui
+
+see: https://ddnext-apis.herokuapp.com/swagger-ui.html
+
