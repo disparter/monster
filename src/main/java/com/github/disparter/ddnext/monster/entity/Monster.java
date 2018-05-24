@@ -43,13 +43,9 @@ public class Monster implements Serializable {
 	private MonsterType type;
 	
 	@Enumerated(EnumType.STRING)
-	@Column(name="str_tendency_ge_id")
-	private Tendency tendencyGE;
+	@Column(name="str_tendency_id")
+	private Alignment alignment;
 
-	@Enumerated(EnumType.STRING)
-	@Column(name="str_tendency_lc_id")
-	private Tendency tendencyLC;
-	
 	@Column(name="int_armor_class")
 	private Integer armorClass;
 
@@ -140,22 +136,6 @@ public class Monster implements Serializable {
 
 	public void setType(MonsterType type) {
 		this.type = type;
-	}
-
-	public Tendency getTendencyGE() {
-		return tendencyGE;
-	}
-
-	public void setTendencyGE(Tendency tendencyGE) {
-		this.tendencyGE = tendencyGE;
-	}
-
-	public Tendency getTendencyLC() {
-		return tendencyLC;
-	}
-
-	public void setTendencyLC(Tendency tendencyLC) {
-		this.tendencyLC = tendencyLC;
 	}
 
 	public Integer getArmorClass() {
@@ -300,6 +280,14 @@ public class Monster implements Serializable {
 
 	public void setActions(List<Action> actions) {
 		this.actions = actions;
+	}
+
+	public Alignment getAlignment() {
+		return alignment;
+	}
+
+	public void setAlignment(Alignment alignment) {
+		this.alignment = alignment;
 	}
 
 	@Override
