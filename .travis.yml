@@ -1,0 +1,15 @@
+language: java
+dist: trusty
+
+notifications:
+  slack:
+    secure: kesZCEWfNxx9wXEA1+PRMucdjjJ+gq+NGAk+YmcHk0J5NPCu4zOlHgNgLirysDxKFEjPWmmh3RLoFHN8Hti/Dqyv4l1D+y1rb4MA/myz68mpA3tINJuAVY+rKSoIsNx34we2/4ilCGZ+hiK4ey7GS42O1wjp47XumSmSbsVlWOH5xV+3inIlgfs8W+cdEq070RiDAvtZRHha6e6iF6Erdz31mJFYYIgHRsSQQRLzY5HBOPOWi/Qa003lg6IC2DnNat09RRet15bW08fYg9s0ZmitfaRY+mJsUXNSmAQBZkMMbukzEFnETPa/n4XNwPNP9Bl38qf3jKUjFFaPClxLo1K/1BgZrB+S0yt0vDHZZ/Rhd3VZCT2pTkNFO/1HaviEEkoFlRj7Cmi28+2YjcE5+40zR2Ygpih+7oUbFi4/4lmISMFDZyR7h740Q/ux+/I5gjgHW+riwz5CQegZzd0fCHLdSKfxWeB3CneAjqsdchXebM89996BDaCqc8nurgsMIbEkNJmPgeizDEwDMAphUXxcsPfqKmbdcZjODviEP+0+eMoCwbLK9z7N897a7EmJIJZwb4vjJUnoK+nH7G5r0JLUMkSfgY+lohFVYWaUMk39nzVDDVB1MZNDtR9EuPX2rlvCnZkOCgap7hu/cQSHNjgNwYoERCQ1vw60ygzGi6U=
+
+addons:
+  sonarcloud:
+    organization: "disparter-github" # the key of the org you chose at step #3
+    token:
+      secure: 8c7be705f10dd694048a2aeb8b19d8696ce53360 # encrypted value of your token
+script:
+  # other script steps might be done before running the actual analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
