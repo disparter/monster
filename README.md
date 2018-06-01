@@ -1,4 +1,3 @@
-[![Build Status](https://travis-ci.org/disparter/monster.svg?branch=master)](https://travis-ci.org/disparter/monster)
 
 # ddnext 
 
@@ -16,3 +15,9 @@ see: http://dm-shield.s3-website-sa-east-1.amazonaws.com
 
 see: https://ddnext-apis.herokuapp.com/swagger-ui.html
 
+### Continuous Integration Status
+[![Build Status](https://travis-ci.org/disparter/monster.svg?branch=master)](https://travis-ci.org/disparter/monster)
+[![Quality Gate](https://sonarcloud.io/api/badges/gate?key=com.github.disparter.ddnext:monster)](https://sonarcloud.io/dashboard/index/com.github.disparter.ddnext:monster)
+[![SonarCloud Coverage](https://sonarcloud.io/api/badges/measure?key=com.github.disparter.ddnext:monster&metric=coverage)](https://sonarcloud.io/component_measures/metric/coverage/list?id=com.github.disparter.ddnext:monster)
+[![SonarCloud Bugs](https://sonarcloud.io/api/badges/measure?key=com.github.disparter.ddnext:monster&metric=bugs)](https://sonarcloud.io/component_measures/metric/reliability_rating/list?id=com.github.disparter.ddnext:monster)
+[![SonarCloud Vulnerabilities](https://sonarcloud.io/api/badges/measure?key=com.github.disparter.ddnext:monster&metric=vulnerabilities)](https://sonarcloud.io/component_measures/metric/security_rating/list?id=com.github.disparter.ddnext:monster)
