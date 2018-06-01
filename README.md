@@ -17,8 +17,8 @@ see: https://ddnext-apis.herokuapp.com/swagger-ui.html
 
 ### :cyclone: Continuous Integration status
 [![Build Status](https://travis-ci.org/disparter/monster.svg?branch=master)](https://travis-ci.org/disparter/monster)
-[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=com.github.disparter.ddnext%3Amonster&metric=alert_status)](https://sonarcloud.io/dashboard/index/com.github.disparter:monster)
-[![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.disparter.ddnext%3Amonster&metric=coverage)](https://sonarcloud.io/component_measures/metric/coverage/list?id=com.github.disparter:monster)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=com.github.disparter.ddnext%3Amonster&metric=alert_status)](https://sonarcloud.io/dashboard/index/com.github.disparter.ddnext:monster)
+[![SonarCloud Coverage](https://sonarcloud.io/api/project_badges/measure?project=com.github.disparter.ddnext%3Amonster&metric=coverage)](https://sonarcloud.io/component_measures/metric/coverage/list?id=com.github.disparter.ddnext:monster)
 [![SonarCloud Bugs](https://sonarcloud.io/api/project_badges/measure?project=com.github.disparter.ddnext%3Amonster&metric=bugs)](https://sonarcloud.io/component_measures/metric/reliability_rating/list?id=com.github.disparter.ddnext%3Amonster)
 [![SonarCloud Vulnerabilities](https://sonarcloud.io/api/project_badges/measure?project=com.github.disparter.ddnext%3Amonster&metric=vulnerabilities)](https://sonarcloud.io/component_measures/metric/security_rating/list?id=com.github.disparter.ddnext%3Amonster)
 
