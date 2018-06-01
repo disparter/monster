@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/disparter/monster.svg?branch=master)](https://travis-ci.org/disparter/monster)
+
 # ddnext 
 
 this project is about to create some services to help with auto generation 
