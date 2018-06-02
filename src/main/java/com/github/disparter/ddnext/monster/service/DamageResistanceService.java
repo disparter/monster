@@ -9,12 +9,12 @@ import com.github.disparter.ddnext.monster.repository.DamageResistanceRepository
 
 @Service
 public class DamageResistanceService {
-	
-	@Autowired
-	private DamageResistanceRepository damageResistanceRepository;	
-	
-	public List<DamageType> getTypes() {
-		return damageResistanceRepository.getTypes();
-	}
-	
+    
+    @Autowired
+    private DamageResistanceRepository damageResistanceRepository;    
+    
+    public List<DamageType> getTypes() {
+        return damageResistanceRepository.getTypes();
+    }
+    
 }

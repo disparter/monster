@@ -9,12 +9,12 @@ import com.github.disparter.ddnext.monster.repository.SenseRepository;
 
 @Service
 public class SenseService {
-	
-	@Autowired
-	private SenseRepository skillRepository;	
-	
-	public List<SenseType> getTypes() {
-		return skillRepository.getTypes();
-	}
-	
+    
+    @Autowired
+    private SenseRepository skillRepository;    
+    
+    public List<SenseType> getTypes() {
+        return skillRepository.getTypes();
+    }
+    
 }

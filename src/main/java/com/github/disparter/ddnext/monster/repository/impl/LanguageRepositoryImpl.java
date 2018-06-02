@@ -8,9 +8,9 @@ import com.github.disparter.ddnext.monster.repository.custom.LanguageCustom;
 
 public class LanguageRepositoryImpl implements LanguageCustom {
 
-	@Override
-	public List<LanguageType> getTypes() {
-		return Arrays.asList(LanguageType.values());
-	}
+    @Override
+    public List<LanguageType> getTypes() {
+        return Arrays.asList(LanguageType.values());
+    }
 
 }

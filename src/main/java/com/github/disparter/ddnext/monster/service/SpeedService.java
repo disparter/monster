@@ -9,12 +9,12 @@ import com.github.disparter.ddnext.monster.repository.SpeedRepository;
 
 @Service
 public class SpeedService {
-	
-	@Autowired
-	private SpeedRepository speedRepository;	
-	
-	public List<SpeedType> getTypes() {
-		return speedRepository.getTypes();
-	}
-	
+    
+    @Autowired
+    private SpeedRepository speedRepository;    
+    
+    public List<SpeedType> getTypes() {
+        return speedRepository.getTypes();
+    }
+    
 }

@@ -5,7 +5,7 @@ import java.util.List;
 import com.github.disparter.ddnext.monster.entity.ConditionType;
 
 public interface ConditionImmunityCustom { 
-	
-	public List<ConditionType> getTypes();
+    
+    public List<ConditionType> getTypes();
 
 }

@@ -9,12 +9,12 @@ import com.github.disparter.ddnext.monster.repository.ConditionImmunityRepositor
 
 @Service
 public class ConditionImmunityService {
-	
-	@Autowired
-	private ConditionImmunityRepository conditionImmunityRepository;	
-	
-	public List<ConditionType> getTypes() {
-		return conditionImmunityRepository.getTypes();
-	}
-	
+    
+    @Autowired
+    private ConditionImmunityRepository conditionImmunityRepository;    
+    
+    public List<ConditionType> getTypes() {
+        return conditionImmunityRepository.getTypes();
+    }
+    
 }

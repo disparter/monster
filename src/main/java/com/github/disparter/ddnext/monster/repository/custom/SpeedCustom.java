@@ -5,7 +5,7 @@ import java.util.List;
 import com.github.disparter.ddnext.monster.entity.SpeedType;
 
 public interface SpeedCustom { 
-	
-	public List<SpeedType> getTypes();
+    
+    public List<SpeedType> getTypes();
 
 }

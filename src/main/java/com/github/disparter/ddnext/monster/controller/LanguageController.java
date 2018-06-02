@@ -15,12 +15,12 @@ import com.github.disparter.ddnext.monster.service.LanguageService;
 @RequestMapping("/v1/languages")
 public class LanguageController {
 
-	@Autowired
-	private LanguageService languageService;
-	
-	@RequestMapping(path = "/types", method = RequestMethod.GET)
-	public ResponseEntity<List<LanguageType>> types() {
-	    return ResponseEntity.ok(languageService.getTypes());
-	}
+    @Autowired
+    private LanguageService languageService;
+    
+    @RequestMapping(path = "/types", method = RequestMethod.GET)
+    public ResponseEntity<List<LanguageType>> types() {
+        return ResponseEntity.ok(languageService.getTypes());
+    }
     
 }

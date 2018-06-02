@@ -16,16 +16,16 @@ import com.github.disparter.ddnext.monster.service.MonsterService;
 @RequestMapping("/v1/monsters")
 public class MonsterController {
 
-	@Autowired
-	private MonsterService monsterService;
-	
-	@RequestMapping(path = "/types", method = RequestMethod.GET)
-	public ResponseEntity<List<MonsterType>> types() {
-	    return ResponseEntity.ok(monsterService.getTypes());
-	}
+    @Autowired
+    private MonsterService monsterService;
     
-	@RequestMapping(path = "/alignments", method = RequestMethod.GET)
-	public ResponseEntity<List<Alignment>> alignments() {
-	    return ResponseEntity.ok(monsterService.getAlignments());
-	}
+    @RequestMapping(path = "/types", method = RequestMethod.GET)
+    public ResponseEntity<List<MonsterType>> types() {
+        return ResponseEntity.ok(monsterService.getTypes());
+    }
+    
+    @RequestMapping(path = "/alignments", method = RequestMethod.GET)
+    public ResponseEntity<List<Alignment>> alignments() {
+        return ResponseEntity.ok(monsterService.getAlignments());
+    }
 }

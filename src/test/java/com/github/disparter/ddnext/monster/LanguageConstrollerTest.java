@@ -12,38 +12,29 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.github.disparter.ddnext.monster.controller.MonsterController;
+import com.github.disparter.ddnext.monster.controller.LanguageController;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(MonsterController.class)
-public class MonsterConstrollerTest {
+@WebMvcTest(LanguageController.class)
+public class LanguageConstrollerTest {
 
     private static final String VERSION = "/v1";
-    private static final String MONSTER = "/monsters";
+    private static final String LANGUAGE = "/languages";
 
     
     @Autowired
     private MockMvc mvc;
 
     @MockBean
-    private MonsterController controller;
+    private LanguageController controller;
     
     @Test
     public void getTypes() throws Exception {
 
-       mvc.perform(get(VERSION + MONSTER + "/types")
+       mvc.perform(get(VERSION + LANGUAGE + "/types")
            .contentType(APPLICATION_JSON))
            .andExpect(status().isOk());
        
    }
 
-    @Test
-    public void getAlignments() throws Exception {
-
-       mvc.perform(get(VERSION + MONSTER + "/alignments")
-           .contentType(APPLICATION_JSON))
-           .andExpect(status().isOk());
-       
-   }
-    
 }

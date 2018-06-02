@@ -17,25 +17,25 @@ import com.github.disparter.ddnext.monster.helper.SmartLocaleResolver;
 public class WebConfig implements WebMvcConfigurer {
 
 
-	@Bean("messageSource")
-	public MessageSource messageSource() {
-		ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
-		messageSource.setBasename("classpath:locale/messages");
-		messageSource.setDefaultEncoding("UTF-8");
-		messageSource.setUseCodeAsDefaultMessage(true);
-		return messageSource;
-	}
+    @Bean("messageSource")
+    public MessageSource messageSource() {
+        ReloadableResourceBundleMessageSource messageSource = new ReloadableResourceBundleMessageSource();
+        messageSource.setBasename("classpath:locale/messages");
+        messageSource.setDefaultEncoding("UTF-8");
+        messageSource.setUseCodeAsDefaultMessage(true);
+        return messageSource;
+    }
 
-	@Bean
-	public LocaleResolver localeResolver() {
-		return new SmartLocaleResolver();
-	}
+    @Bean
+    public LocaleResolver localeResolver() {
+        return new SmartLocaleResolver();
+    }
 
-	@Override
-	public void addInterceptors(InterceptorRegistry registry) {
-		LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
-		localeChangeInterceptor.setParamName("lang");
-		registry.addInterceptor(localeChangeInterceptor);
-	}
+    @Override
+    public void addInterceptors(InterceptorRegistry registry) {
+        LocaleChangeInterceptor localeChangeInterceptor = new LocaleChangeInterceptor();
+        localeChangeInterceptor.setParamName("lang");
+        registry.addInterceptor(localeChangeInterceptor);
+    }
 
 }

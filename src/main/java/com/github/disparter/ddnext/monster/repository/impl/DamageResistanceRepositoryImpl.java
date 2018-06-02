@@ -8,9 +8,9 @@ import com.github.disparter.ddnext.monster.repository.custom.DamageResistanceCus
 
 public class DamageResistanceRepositoryImpl implements DamageResistanceCustom {
 
-	@Override
-	public List<DamageType> getTypes() {
-		return Arrays.asList(DamageType.values());
-	}
+    @Override
+    public List<DamageType> getTypes() {
+        return Arrays.asList(DamageType.values());
+    }
 
 }

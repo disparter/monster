@@ -8,9 +8,9 @@ import com.github.disparter.ddnext.monster.repository.custom.ConditionImmunityCu
 
 public class ConditionImmunityRepositoryImpl implements ConditionImmunityCustom {
 
-	@Override
-	public List<ConditionType> getTypes() {
-		return Arrays.asList(ConditionType.values());
-	}
+    @Override
+    public List<ConditionType> getTypes() {
+        return Arrays.asList(ConditionType.values());
+    }
 
 }

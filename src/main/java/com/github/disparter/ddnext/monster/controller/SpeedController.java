@@ -15,12 +15,12 @@ import com.github.disparter.ddnext.monster.service.SpeedService;
 @RequestMapping("/v1/speeds")
 public class SpeedController {
 
-	@Autowired
-	private SpeedService speedService;
-	
-	@RequestMapping(path = "/types", method = RequestMethod.GET)
-	public ResponseEntity<List<SpeedType>> types() {
-	    return ResponseEntity.ok(speedService.getTypes());
-	}
+    @Autowired
+    private SpeedService speedService;
+    
+    @RequestMapping(path = "/types", method = RequestMethod.GET)
+    public ResponseEntity<List<SpeedType>> types() {
+        return ResponseEntity.ok(speedService.getTypes());
+    }
     
 }
