@@ -5,42 +5,42 @@ import com.github.disparter.ddnext.monster.helper.Translator;
 
 @JsonFormat(shape = JsonFormat.Shape.OBJECT)
 public enum LanguageType {
-	All("language.all.name", "language.all.description"),
-	
-	//standard
-	Common("language.common.name", "language.common.description"),
-	Dwarvish("language.dwarvish.name", "language.dwarvish.description"),
-	Elvish("language.elvish.name", "language.elvish.description"),
-	Giant("language.giant.name", "language.giant.description"),
-	Gnomish("language.gnomish.name", "language.gnomish.description"),
-	Goblin("language.goblin.name", "language.goblin.description"),
-	Halfling("language.halfling.name", "language.halfling.description"),
-	Orc("language.orc.name", "language.orc.description"),
-	
-	//exotic
-	Abyssal("language.abyssal.name", "language.abyssal.description"),
-	Celestial("language.celestial.name", "language.celestial.description"),
-	Draconic("language.draconic.name", "language.draconic.description"),
-	Deepspeech("language.deepspeech.name", "language.deepspeech.description"),
-	Infernal("language.infernal.name", "language.infernal.description"),
-	Primordial("language.primordial.name", "language.primordial.description"),
-	Sylvan("language.sylvan.name", "language.sylvan.description"),
-	Undercommon("language.undercommon.name", "language.undercommon.description");
-	
-	private String name;
-	private String description;
-	
-	LanguageType(String name, String description){
-		this.name = name;
-		this.description = description;
-	}
-	
-	public String getName() {
-		return Translator.get(this.name);
-	}
+    ALL("language.all.name", "language.all.description"),
+    
+    //standard
+    COMMON("language.common.name", "language.common.description"),
+    DWARVISH("language.dwarvish.name", "language.dwarvish.description"),
+    ELVISH("language.elvish.name", "language.elvish.description"),
+    GIANT("language.giant.name", "language.giant.description"),
+    GNOMISH("language.gnomish.name", "language.gnomish.description"),
+    GOBLIN("language.goblin.name", "language.goblin.description"),
+    HALFLING("language.halfling.name", "language.halfling.description"),
+    ORC("language.orc.name", "language.orc.description"),
+    
+    //exotic
+    ABYSSAL("language.abyssal.name", "language.abyssal.description"),
+    CELESTIAL("language.celestial.name", "language.celestial.description"),
+    DRACONIC("language.draconic.name", "language.draconic.description"),
+    DEEPSPEECH("language.deepspeech.name", "language.deepspeech.description"),
+    INFERNAL("language.infernal.name", "language.infernal.description"),
+    PRIMORDIAL("language.primordial.name", "language.primordial.description"),
+    SYLVAN("language.sylvan.name", "language.sylvan.description"),
+    UNDERCOMMON("language.undercommon.name", "language.undercommon.description");
+    
+    private String name;
+    private String description;
+    
+    LanguageType(String name, String description){
+        this.name = name;
+        this.description = description;
+    }
+    
+    public String getName() {
+        return Translator.get(this.name);
+    }
 
-	public String getDescription() {
-		return Translator.get(this.description);
-	}
-	
+    public String getDescription() {
+        return Translator.get(this.description);
+    }
+    
 }

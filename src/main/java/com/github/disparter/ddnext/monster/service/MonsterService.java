@@ -10,16 +10,16 @@ import com.github.disparter.ddnext.monster.repository.MonsterRepository;
 
 @Service
 public class MonsterService {
-	
-	@Autowired
-	private MonsterRepository monsterRepository;	
-	
-	public List<MonsterType> getTypes() {
-		return monsterRepository.getTypes();
-	}
+    
+    @Autowired
+    private MonsterRepository monsterRepository;    
+    
+    public List<MonsterType> getTypes() {
+        return monsterRepository.getTypes();
+    }
 
-	public List<Alignment> getAlignments() {
-		return monsterRepository.getAlignments();
-	}
-	
+    public List<Alignment> getAlignments() {
+        return monsterRepository.getAlignments();
+    }
+    
 }

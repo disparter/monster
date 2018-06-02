@@ -9,12 +9,12 @@ import com.github.disparter.ddnext.monster.repository.LanguageRepository;
 
 @Service
 public class LanguageService {
-	
-	@Autowired
-	private LanguageRepository languageRepository;	
-	
-	public List<LanguageType> getTypes() {
-		return languageRepository.getTypes();
-	}
-	
+    
+    @Autowired
+    private LanguageRepository languageRepository;    
+    
+    public List<LanguageType> getTypes() {
+        return languageRepository.getTypes();
+    }
+    
 }

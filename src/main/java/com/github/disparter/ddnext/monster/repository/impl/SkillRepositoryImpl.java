@@ -8,9 +8,9 @@ import com.github.disparter.ddnext.monster.repository.custom.SkillCustom;
 
 public class SkillRepositoryImpl implements SkillCustom {
 
-	@Override
-	public List<SkillType> getTypes() {
-		return Arrays.asList(SkillType.values());
-	}
+    @Override
+    public List<SkillType> getTypes() {
+        return Arrays.asList(SkillType.values());
+    }
 
 }

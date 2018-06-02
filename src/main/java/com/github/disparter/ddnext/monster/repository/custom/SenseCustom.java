@@ -5,7 +5,7 @@ import java.util.List;
 import com.github.disparter.ddnext.monster.entity.SenseType;
 
 public interface SenseCustom { 
-	
-	public List<SenseType> getTypes();
+    
+    public List<SenseType> getTypes();
 
 }

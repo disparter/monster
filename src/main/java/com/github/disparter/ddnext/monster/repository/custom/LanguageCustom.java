@@ -5,7 +5,7 @@ import java.util.List;
 import com.github.disparter.ddnext.monster.entity.LanguageType;
 
 public interface LanguageCustom { 
-	
-	public List<LanguageType> getTypes();
+    
+    public List<LanguageType> getTypes();
 
 }

@@ -15,12 +15,12 @@ import com.github.disparter.ddnext.monster.service.DamageResistanceService;
 @RequestMapping("/v1/resistances")
 public class DamageResistanceController {
 
-	@Autowired
-	private DamageResistanceService damageResistanceService;
-	
-	@RequestMapping(method = RequestMethod.GET)
-	public ResponseEntity<List<DamageType>> types() {
-	    return ResponseEntity.ok(damageResistanceService.getTypes());
-	}
+    @Autowired
+    private DamageResistanceService damageResistanceService;
+    
+    @RequestMapping(method = RequestMethod.GET)
+    public ResponseEntity<List<DamageType>> types() {
+        return ResponseEntity.ok(damageResistanceService.getTypes());
+    }
     
 }

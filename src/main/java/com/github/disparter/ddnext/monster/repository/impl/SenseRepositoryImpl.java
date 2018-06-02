@@ -8,9 +8,9 @@ import com.github.disparter.ddnext.monster.repository.custom.SenseCustom;
 
 public class SenseRepositoryImpl implements SenseCustom {
 
-	@Override
-	public List<SenseType> getTypes() {
-		return Arrays.asList(SenseType.values());
-	}
+    @Override
+    public List<SenseType> getTypes() {
+        return Arrays.asList(SenseType.values());
+    }
 
 }

@@ -15,12 +15,12 @@ import com.github.disparter.ddnext.monster.service.SenseService;
 @RequestMapping("/v1/senses")
 public class SenseController {
 
-	@Autowired
-	private SenseService skillService;
-	
-	@RequestMapping(path = "/types", method = RequestMethod.GET)
-	public ResponseEntity<List<SenseType>> types() {
-	    return ResponseEntity.ok(skillService.getTypes());
-	}
+    @Autowired
+    private SenseService skillService;
+    
+    @RequestMapping(path = "/types", method = RequestMethod.GET)
+    public ResponseEntity<List<SenseType>> types() {
+        return ResponseEntity.ok(skillService.getTypes());
+    }
     
 }

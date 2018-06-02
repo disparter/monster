@@ -9,12 +9,12 @@ import com.github.disparter.ddnext.monster.repository.SkillRepository;
 
 @Service
 public class SkillService {
-	
-	@Autowired
-	private SkillRepository skillRepository;	
-	
-	public List<SkillType> getTypes() {
-		return skillRepository.getTypes();
-	}
-	
+    
+    @Autowired
+    private SkillRepository skillRepository;    
+    
+    public List<SkillType> getTypes() {
+        return skillRepository.getTypes();
+    }
+    
 }

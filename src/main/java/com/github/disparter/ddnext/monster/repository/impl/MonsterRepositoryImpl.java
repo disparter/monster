@@ -9,14 +9,14 @@ import com.github.disparter.ddnext.monster.repository.custom.MonsterCustom;
 
 public class MonsterRepositoryImpl implements MonsterCustom {
 
-	@Override
-	public List<MonsterType> getTypes() {
-		return Arrays.asList(MonsterType.values());
-	}
+    @Override
+    public List<MonsterType> getTypes() {
+        return Arrays.asList(MonsterType.values());
+    }
 
-	@Override
-	public List<Alignment> getAlignments() {
-		return Arrays.asList(Alignment.values());
-	}
+    @Override
+    public List<Alignment> getAlignments() {
+        return Arrays.asList(Alignment.values());
+    }
 
 }

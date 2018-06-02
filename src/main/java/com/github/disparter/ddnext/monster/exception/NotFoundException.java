@@ -7,9 +7,9 @@ import com.github.disparter.ddnext.monster.helper.Translator;
 @ResponseStatus(HttpStatus.NOT_FOUND)
 class NotFoundException extends RuntimeException {
 
-	private static final long serialVersionUID = -1160040427727423327L;
+    private static final long serialVersionUID = -1160040427727423327L;
 
-	public NotFoundException() {
-		super(Translator.get("exception.notfound"));
-	}
+    public NotFoundException() {
+        super(Translator.get("exception.notfound"));
+    }
 }
