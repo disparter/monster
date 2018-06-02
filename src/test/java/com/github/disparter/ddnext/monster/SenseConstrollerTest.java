@@ -12,38 +12,29 @@ import org.springframework.boot.test.mock.mockito.MockBean;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.github.disparter.ddnext.monster.controller.MonsterController;
+import com.github.disparter.ddnext.monster.controller.SenseController;
 
 @RunWith(SpringRunner.class)
-@WebMvcTest(MonsterController.class)
-public class MonsterConstrollerTest {
+@WebMvcTest(SenseController.class)
+public class SenseConstrollerTest {
 
     private static final String VERSION = "/v1";
-    private static final String MONSTER = "/monsters";
+    private static final String SENSE = "/senses";
 
     
     @Autowired
     private MockMvc mvc;
 
     @MockBean
-    private MonsterController controller;
+    private SenseController controller;
     
     @Test
     public void getTypes() throws Exception {
 
-       mvc.perform(get(VERSION + MONSTER + "/types")
+       mvc.perform(get(VERSION + SENSE + "/types")
            .contentType(APPLICATION_JSON))
            .andExpect(status().isOk());
        
    }
 
-    @Test
-    public void getAlignments() throws Exception {
-
-       mvc.perform(get(VERSION + MONSTER + "/alignments")
-           .contentType(APPLICATION_JSON))
-           .andExpect(status().isOk());
-       
-   }
-    
 }
