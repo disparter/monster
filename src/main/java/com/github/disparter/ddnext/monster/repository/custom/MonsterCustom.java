@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.github.disparter.ddnext.monster.entity.Alignment;
 import com.github.disparter.ddnext.monster.entity.MonsterType;
+import com.github.disparter.ddnext.monster.entity.Size;
 
 public interface MonsterCustom { 
     
@@ -11,4 +12,6 @@ public interface MonsterCustom {
     
     public List<Alignment> getAlignments();
 
+    public List<Size> getSizes();
+    
 }
