@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.github.disparter.ddnext.monster.entity.Alignment;
 import com.github.disparter.ddnext.monster.entity.MonsterType;
+import com.github.disparter.ddnext.monster.entity.Size;
 import com.github.disparter.ddnext.monster.service.MonsterService;
 
 @RestController
@@ -27,5 +28,10 @@ public class MonsterController {
     @RequestMapping(path = "/alignments", method = RequestMethod.GET)
     public ResponseEntity<List<Alignment>> alignments() {
         return ResponseEntity.ok(monsterService.getAlignments());
+    }
+    
+    @RequestMapping(path = "/sizes", method = RequestMethod.GET)
+    public ResponseEntity<List<Size>> sizes() {
+        return ResponseEntity.ok(monsterService.getSizes());
     }
 }

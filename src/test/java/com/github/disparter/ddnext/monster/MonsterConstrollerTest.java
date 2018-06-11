@@ -30,20 +30,23 @@ public class MonsterConstrollerTest {
     
     @Test
     public void getTypes() throws Exception {
-
-       mvc.perform(get(VERSION + MONSTER + "/types")
+        mvc.perform(get(VERSION + MONSTER + "/types")
            .contentType(APPLICATION_JSON))
            .andExpect(status().isOk());
-       
-   }
+    }
 
     @Test
     public void getAlignments() throws Exception {
-
-       mvc.perform(get(VERSION + MONSTER + "/alignments")
+        mvc.perform(get(VERSION + MONSTER + "/alignments")
            .contentType(APPLICATION_JSON))
            .andExpect(status().isOk());
-       
-   }
+    }
+   
+    @Test
+    public void getSizes() throws Exception {
+        mvc.perform(get(VERSION + MONSTER + "/sizes")
+           .contentType(APPLICATION_JSON))
+           .andExpect(status().isOk());
+    }
     
 }
