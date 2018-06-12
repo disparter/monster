@@ -13,8 +13,13 @@ addons:
       
 install: true
 
-script: mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
+script: 
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent verify sonar:sonar
+  - mvn cobertura:cobertura
   
 cache:
   directories:
   - $HOME/.m2
+  
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
